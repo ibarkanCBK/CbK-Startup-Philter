@@ -3,19 +3,118 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Start-Up Project</title>
+    <title>Project Philter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <!-- Navigation Bar-->
+    <div class="navigation-bar" id="navigation-bar">
+        <h2> Philter</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About the Founder</a>
+        </div>
+    </div>
     <!-- Title -->
-    <!-- Information about the problem -->
-    <!-- Information about the users -->
-    <!-- Introduction to the solution -->
-    <!-- Supporting research -->
-    <!-- Product features -->
-    <!-- Sign up for the product (call to action) -->
-</body>
+    <div class="container landing" id="title">
+        <h1>Philter</h1>
+        <h3>Breathe a little easier with the Philter App</h3>
+    </div>
 
-</html>
+    </div>
+    <!-- Information about the problem -->
+    <div class="container warm-grey-bg" id="problem-statement">
+        <h2>The Problem</h2>
+        <div class="deck">
+            <div class="problem-card" id="pollution">
+            </div>
+            <div id="problem">
+                <p>Philadelphia has an air pollution problem and <br> <em><strong>it stinks!</strong></em></p>
+            </div>
+
+        </div>
+    </div>
+    <!-- Information about the users -->
+    <div class="container" id="users">
+        <h2>The Users</h2>
+        <div class="deck">
+            <div class="user-card" id="old">
+
+            </div>
+            <div class="user-card" id="young">
+
+            </div>
+            <div class="user-card" id="child">
+
+            </div>
+        </div>
+        <p>Millions of Philadelphians of all backgrounds suffer from bad air quality. </p>
+    </div>
+    <!-- Introduction to the solution -->
+    <div class="container warm-grey-bg center-text" id="value-proposition">
+        <h2>Philter's Features</h2>
+        <div class="feature" id="data-feature">
+            <h3>Notifications</h3>
+            <img class="favicon" src="https://img.icons8.com/external-soft-fill-juicy-fish/60/000000/external-message-messages-and-communication-soft-fill-soft-fill-juicy-fish-11.png" />
+            <p>It helps to notify them when the breathing time is best on there phone and stuff.</p>
+        </div>
+        <div class="feature" id="data-feature">
+            <h3>Air Quality Data</h3>
+            <img class="favicon" src="https://img.icons8.com/office/80/000000/combo-chart.png" />
+            <p>The app gives you info about the air quality!</p>
+        </div>
+        <div class="feature" id="visualizer-feature">
+            <h3>Visualizer</h3>
+            <img class="favicon" src="https://img.icons8.com/office/80/000000/pie-chart.png" />
+            <p>The app provides you with a visual display of the air quality</p>
+        </div>
+        <div class="feature " id="stay-safe-feature">
+            <h3>Real Time Feedback</h3>
+            <img class="favicon" src="https://img.icons8.com/office/80/000000/sneeze.png" />
+            <p>The app provides you with information on how to stay safe depending on the air quality reading!</p>
+        </div>
+    </div>
+    <!-- Supporting research -->
+    <div class="container" id="research">
+        <h2>Supporting Research</h2>
+        <ol>
+            <li>Philly smells bad!
+                <br><a href="https://www1.villanova.edu/villanova/media/features/AirPollutionResearch.html#:~:text=%E2%80%93%20Philadelphia%20ranks%20as%20one%20of,from%20accumulating%20in%20our%20city.">Click Here to Learn More</a>
+            </li>
+            <li>I wake up with brown stuff in my nose!
+                <br><a href="https://www1.villanova.edu/villanova/media/features/AirPollutionResearch.html#:~:text=%E2%80%93%20Philadelphia%20ranks%20as%20one%20of,from%20accumulating%20in%20our%20city.">Click Here to Learn More</a>
+            </li>
+            <li>I get sick all the time!<br><a href="https://www1.villanova.edu/villanova/media/features/AirPollutionResearch.html#:~:text=%E2%80%93%20Philadelphia%20ranks%20as%20one%20of,from%20accumulating%20in%20our%20city.">Click Here to Learn More</a></li>
+        </ol>
+    </div>
+    <!-- Sign up for the product (call to action) -->
+    <div class="container sign-up-form">
+        <h2>Sign Up For Our First Release!</h2>
+        <form action=" ">
+            <input type="text" class="text-input" id="first-name" placeholder="First Name" required><br>
+            <input type="text" class="text-input" id="last-name" placeholder="Last Name" required><br>
+            <input type="text" class="text-input" id="email" placeholder="Please Enter Your Email" required>
+            <p>What area of the city are you?</p>
+            <label for="area"><input class="checkbox-radio" type="radio" id="north-philadelphia" name="area" value="north-philadelphia" checked>North Philadelphia</label><br>
+            <label for="area"><input class="checkbox-radio" type="radio" id="east-phil" name="area" value="east-philadelphia">East Philadelphia</label><br>
+            <label for="area"><input class="checkbox-radio" type="radio" id="south-phil" name="area" value="south-philadelphia">South Philadelphia</label><br>
+            <label for="area"><input class="checkbox-radio" type="radio" id="west-phil" name="area" value="west-philadelphia">West Philadelphia</label><br>
+            <p>Do you suffer from any of the following?</p>
+            <label for="chronic-conditions"><input class="checkbox-radio" type="checkbox" id="asthma" name="chronic-conditions" value="asthma">Ashtma</label><br>
+            <label for="chronic-conditions"><input class="checkbox-radio" type="checkbox" id="bronchitis" name="chronic-conditions" value="bronchitis">Bronchitis</label><br>
+            <label for="chronic-conditions"><input class="checkbox-radio" type="checkbox" id="bronchitis" name="chronic-conditions" value="frequent-colds">Frequent Colds</label> <br>
+            <p>Would you be interested in paying for a product that cleams the air in your home?</p>
+            <label for=" interested"><input class="checkbox-radio" type="radio" id="yes" name="interested" value="yes">Yes</label><br>
+            <label for="interest"><input class="checkbox-radio" type="radio" id="yes" name="interested" value="no">No</label> <br>
+            <div class="submit">
+                <input type="submit">
+            </div>
+
+        </form>
+    </div>
+</body>

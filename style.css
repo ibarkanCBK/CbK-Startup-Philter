@@ -1,0 +1,338 @@
+/* These styles are for the mobile version of the project */
+
+:root {
+    --coolgrey: #223843;
+    --warm-grey: #EFF1F3;
+    --champagne-grey: #DBD3D8;
+    --light-suntan: #D8B4A0;
+    --light-mahogany: #d77a61;
+}
+
+body {
+    margin: 0 auto;
+    color: var(--coolgrey);
+}
+
+body {
+    font-family: Times New Roman;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.favicon {
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.warm-grey-bg {
+    background-color: var(--warm-grey)
+}
+
+.container {
+    display: flex;
+    /* border: solid black 1.5px; */
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 5% 1% 10% 1%;
+    text-align: center
+}
+
+.container h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.landing {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(253, 252, 252, 0.6);
+}
+
+.landing h1 {
+    color: var(--coolgrey);
+    text-shadow: 2px 2px 8px rgba(253, 252, 252, 0.85);
+    font-size: 3em;
+}
+
+
+/* Nagivation Bar Styles */
+
+.navigation-bar {
+    display: flex;
+    margin: 0 auto;
+    padding: 5% 1% 5% 1%;
+    background-color: var(--light-mahogany);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-bar h2 {
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    display: flex;
+    text-align: center;
+}
+
+.nav-links a {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    padding: 20px 10px 30px 10px;
+    color: var(--warm-grey);
+}
+
+.navigation-bar a:hover {
+    color: var(--coolgrey);
+}
+
+
+/* Landing Styles */
+
+.landing#title {
+    background-image: url('images/river.jpg');
+}
+
+.landing#title::before {
+    background-color: white;
+    height: 100%;
+}
+
+#title h3 {
+    margin-top: 30px;
+    text-shadow: 2px 2px 3px rgba(253, 252, 252, 0.85);
+}
+
+.landing#about-landing {
+    background-image: url('images/city-hall.jpg');
+}
+
+.deck {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#problem-statement .deck {
+    flex-direction: column;
+}
+
+.problem-card {
+    border: solid 2px var(--coolgrey);
+    background-size: cover;
+    width: 70vw;
+    height: 70vw;
+    border-radius: 25px;
+}
+
+.problem-card#pollution {
+    background-image: url('images/pollution.jpg');
+    background-position: center;
+    margin: 0 auto;
+}
+
+
+/* These styles are for the desktop version of the project*/
+
+.user-card {
+    border: solid 2px var(--coolgrey);
+    background-size: cover;
+    width: 30vw;
+    height: 34vw;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.user-card#old {
+    background-image: url('images/old-people.jpg');
+    background-position: center;
+}
+
+.user-card#young {
+    background-image: url('images/child.jpg');
+}
+
+.user-card#child {
+    background-position: bottom;
+    background-image: url('images/young-people.jpg');
+}
+
+.feature {
+    background-color: white;
+    margin: 10px;
+    padding-top: 15px;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+}
+
+.feature p {
+    color: var(--coolgrey);
+    margin-bottom: 100px;
+}
+
+#research ol {
+    text-align: left;
+}
+
+.sign-up-form {
+    background-color: var(--light-mahogany);
+    padding: 5% 1% 10% 1%;
+}
+
+form {
+    text-align: left;
+}
+
+.text-input {
+    width: 50vw;
+    height: 20px;
+    margin: 5px;
+}
+
+.checkbox-radio {
+    transform: scale(1.5);
+    margin: 10px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="submit"] {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    background-color: lightskyblue;
+    color: white;
+    transform: scale(3);
+    border-radius: 30px;
+    margin: 50px;
+    text-align: center;
+    border: none;
+}
+
+#founder-deck {
+    flex-direction: column;
+}
+
+#founder-deck .card {
+    padding: 20%;
+    text-align: center;
+}
+
+#founder-favorites ol {
+    text-align: left;
+}
+
+@media screen and (min-width: 900px) {
+    /* Global Styles */
+    p {
+        font-size: 2em;
+    }
+    .container h2 {
+        font-size: 3em;
+    }
+    .container h3 {
+        font-size: 2.5em;
+    }
+    .navigation-bar {
+        height: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding: 5px;
+    }
+    .navigation-bar h2 {
+        font-size: 2em;
+        margin-left: 20px;
+    }
+    .nav-links {
+        display: flex;
+    }
+    .nav-links a {
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+    /* Home page landing */
+    #title {
+        min-height: 50vh;
+    }
+    #title h1 {
+        font-size: 8em;
+    }
+    #title h3 {
+        font-size: 3em;
+    }
+    /* Problem Statement Section */
+    .problem-card {
+        width: 50vw;
+        height: 40vw;
+    }
+    #problem-statement .deck {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-left: 5%;
+    }
+    .problem-card#pollution {
+        margin-left: 5px;
+    }
+    .deck #problem {
+        width: 70vw;
+        align-self: center;
+        justify-self: center !important;
+    }
+    /* Research Section  Section */
+    #research ol li {
+        font-size: 2em;
+    }
+    .sign-up-form {
+        padding: 5% 8% 10% 5%;
+    }
+    .text-input {
+        width: 25vw;
+        height: 30px;
+        margin: 5px;
+    }
+    .checkbox-radio {
+        transform: scale(2.5);
+        margin: 20px;
+    }
+    label {
+        font-size: 2em;
+    }
+    /* About Page */
+    #founder-deck {
+        flex-direction: row;
+    }
+    #founder-deck .card {
+        padding: 10%;
+        text-align: center;
+    }
+}
